@@ -17,7 +17,7 @@ function AddtoCard(element){
         finalProductPrice=Number(finalProductPrice);
         let Total=ProductQuantity*finalProductPrice;
         StartTotal+=Total;
-        Product.innerHTML+=ProductName+"<br>"+ProductQuantityDescription+ ProductQuantity+"<br>"+ProductPrice+"<br>";
+        Product.innerHTML+=ProductName+"<br>"+ProductQuantityDescription+ ProductQuantity+"<br>"+ProductPrice+"<br><br>";
         let TotalParagraph=document.querySelector("#total").innerHTML="Total:"+ StartTotal +" € ";
         element.innerText="Added";
         element.setAttribute("disabled","true");
