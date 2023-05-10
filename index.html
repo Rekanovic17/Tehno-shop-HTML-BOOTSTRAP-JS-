@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="h-25 w-100">
+    <div class="w-100 h-25 d-flex p-2 justify-content-center align-items-center bg-danger text-white">
+        <h1>TEHNO SHOP</h1>
+    </div>
+    <div class="container-fluid h-auto w-75">
+       <div class="row">
+            <div class="col-3">
+                <img src="tough-iphone-case-glossy-iphone-12-mini-front-63c82cabb8181.jpg" alt="photo" class="img-fluid">
+            </div>
+            <div class="col-3">
+                <img src="Haylou-Smart-Watch-2-xiaomitiendaperu.jpg" alt="photo" class="img-fluid">
+            </div>
+            <div class="col-3">
+                <img src="preuzmi.jpg" alt="photo" class="img-fluid">
+            </div>
+            <div class="col-3">
+                <img src="tv.jpg" alt="photo" class="img-fluid">
+            </div>
+            <div class="row">
+                <div class="col-3 single-item">
+                    <p id="name" class="m-0"> Name: <b>Iphone</b></p>
+                    <label for="Quantity:">Quantity:</label>
+                     <input type="number" value="0" min="0" class="w-25 mb-1">
+                    <p id="price" class="m-0">Price:<b>700€</b></p>
+                     <button id="btn" onclick="AddtoCard(this)" onclick="AddtoCard(this)" class="btn btn-primary flex-wrap d-flex align-items-end justify-content-end">Buy</button>
+                </div>
+                <div class="col-3 single-item">
+                    <p id="name" class="m-0"> Name: <b>Smart Watch</b></p>
+                    <label for="Quantity:">Quantity:</label>
+                    <input type="number" value="0" min="0" class="w-25 mb-1">
+                    <p id="price" class="m-0">Price:<b>150€</b></p>
+                     <button id="btn" onclick="AddtoCard(this)" class="btn btn-primary flex-wrap d-flex align-items-end justify-content-end">Buy</button>
+                </div>
+                <div class="col-3 single-item">
+                    <p id="name" class="m-0"> Name: <b>Macbook</b></p>
+                    <label for="Quantity:">Quantity:</label>
+                     <input type="number" value="0" min="0" class="w-25 mb-1">
+                    <p id="price" class="m-0">Price:<b>1000€</b></p>
+                     <button id="btn" onclick="AddtoCard(this)" class="btn btn-primary flex-wrap d-flex align-items-end justify-content-end">Buy</button>
+                </div>
+                <div class="col-3 single-item">
+                    <p id="name" class="m-0"> Name: <b>LG TV</b></p>
+                    <label for="Quantity:">Quantity:</label>
+                     <input type="number" value="0" min="0" class="w-25 mb-1">
+                    <p id="price" class="m-0">Price:<b>490€</b></p>
+                     <button id="btn" onclick="AddtoCard(this)" class="btn btn-primary flex-wrap d-flex align-items-end justify-content-end">Buy</button>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="w-100 h-auto bg-danger text-white mt-2 d-flex justify-content-center align-items-center flex-column">
+        <h1 >PRODUCTS:</h1>
+        <p id="shop" class="justify-content-center d-flex"></p>
+        <button class="btn btn-dark m-3" onclick="DeleteAll()">Delete Products</button>
+    </div>
+    <h1 id="total" class="p-3 d-flex justify-content-end align-items-end bg-danger"></h1>
+    <script src="index.js"></script> 
+</body>
+</html>
